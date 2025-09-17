@@ -17,9 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose
-  .connect("mongodb://localhost:27017/OC")
-  .then(() => console.log("Database connected"))
+mongoose.connect("mongodb+srv://mohamedmuktar986_db_user:HomKWoFNfJ63Y6KI@electionsystem.o7hknxd.mongodb.net/").then(() => console.log("Database connected"))
   .catch((err) => console.error("DB connection error:", err));
 
 // Configure uploads directory
